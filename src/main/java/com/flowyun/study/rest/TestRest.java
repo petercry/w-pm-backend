@@ -13,10 +13,8 @@ import java.util.Collection;
 @RestController
 @RequestMapping("/test")
 public class TestRest {
-
     @Autowired
     private IWProjectInfo iwProjectInfo;
-
     @GetMapping("/query")
     public RestResult query(){
         Collection<WProjectInfoDTO> list = iwProjectInfo.getQueryer().queryAll();
