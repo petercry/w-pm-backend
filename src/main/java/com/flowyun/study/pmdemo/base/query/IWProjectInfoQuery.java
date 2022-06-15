@@ -1,5 +1,6 @@
 package com.flowyun.study.pmdemo.base.query;
 
+import com.flowyun.boot.framework.entity.result.DataPage;
 import com.flowyun.study.pmdemo.base.entity.WProjectInfoDO;
 import com.flowyun.study.pmdemo.base.entity.WProjectInfoDTO;
 import com.flowyun.mp.base.module.BaseModuleConverter;
@@ -19,4 +20,6 @@ public interface IWProjectInfoQuery  extends BaseModuleConverter<WProjectInfoDTO
 
     Collection<WProjectInfoDTO> queryAll();
 
+
+    DataPage<WProjectInfoDTO> queryPage(Integer page, Integer pageNo);
 }

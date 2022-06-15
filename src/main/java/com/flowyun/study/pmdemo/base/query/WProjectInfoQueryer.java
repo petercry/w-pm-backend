@@ -1,5 +1,8 @@
 package com.flowyun.study.pmdemo.base.query;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.flowyun.boot.framework.entity.result.DataPage;
 import com.flowyun.study.pmdemo.base.entity.WProjectInfoDO;
 import com.flowyun.study.pmdemo.base.entity.WProjectInfoDTO;
 import com.flowyun.study.pmdemo.base.mapper.WProjectInfoMapper;
@@ -21,5 +24,12 @@ public class WProjectInfoQueryer  extends AbstractModuleQuery<WProjectInfoMapper
     @Override
     public Collection<WProjectInfoDTO> queryAll() {
         return this.converter.doBackwardAll(this.list());
+    }
+
+    @Override
+    public DataPage<WProjectInfoDTO> queryPage(Integer page, Integer pageNo) {
+        IPage<WProjectInfoDO> page1 = new Page<>(page, pageNo);
+        DataPage<WProjectInfoDO> pageRows = this.page(page1);
+        return pageRows.converter(this.converter);
     }
 }
