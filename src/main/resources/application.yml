@@ -3,11 +3,6 @@ spring:
     active: dev
   application:
     name: study
-  cloud:
-    nacos:
-      config:
-        server-addr: nacos.vpcflow.com:8848
-        namespace: ecb6f5f4-6b01-461a-b158-1229dd425df2
   arthas:
     enabled: false
   redisson:
@@ -19,7 +14,7 @@ spring:
       minIdle: 50
       maxActive: 100
     single:
-      address: redis://192.168.4.21:30299
+      address: redis://localhost:6379
   servlet:
     multipart:
       maxFileSize: 50MB

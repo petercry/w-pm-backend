@@ -23,8 +23,8 @@
             <artifactId>af-starter-boot-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.flowyun</groupId>
-            <artifactId>af-starter-cloud-ali</artifactId>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.flowyun</groupId>
