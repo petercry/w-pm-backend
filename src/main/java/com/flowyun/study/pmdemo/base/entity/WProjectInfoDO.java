@@ -17,7 +17,6 @@ import lombok.experimental.Accessors;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
-@Accessors(chain = true)
 @TableName("w_project_info")
 public class WProjectInfoDO extends BaseEntity {
 
