@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
  * @author peter
  * @since 2022-06-09
  */
-@Component
+@Component("PmDemoComponent")
 public class WProjectInfoModuleFacade extends AbstractModuleManager<IWProjectInfoService, IWProjectInfoQuery, WProjectInfoDTO, WProjectInfoDO> implements IWProjectInfo {
 
 }

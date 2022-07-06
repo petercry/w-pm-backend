@@ -36,7 +36,7 @@ public class WProjectInfoDO extends BaseEntity {
     /**
      * 签约时间
      */
-    private String projectSignDate;
+    private String contractSignDate;
 
     /**
      * 合同编号

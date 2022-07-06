@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.flowyun.boot.framework.entity.result.DataPage;
 import com.flowyun.study.pmdemo.base.entity.WProjectInfoDO;
 import com.flowyun.study.pmdemo.base.entity.WProjectInfoDTO;
-import com.flowyun.study.pmdemo.base.mapper.WProjectInfoMapper;
+import com.flowyun.study.pmdemo.base.mapper.WProjectInfoMapperDemo;
 import com.flowyun.mp.base.BaseQuery;
 import com.flowyun.mp.base.module.AbstractModuleQuery;
 
@@ -19,7 +19,7 @@ import java.util.Collection;
  * @author peter
  * @since 2022-06-09
  */
-public class WProjectInfoQueryer  extends AbstractModuleQuery<WProjectInfoMapper, WProjectInfoDTO, WProjectInfoDO> implements IWProjectInfoQuery,BaseQuery<WProjectInfoDO> {
+public class WProjectInfoQueryer  extends AbstractModuleQuery<WProjectInfoMapperDemo, WProjectInfoDTO, WProjectInfoDO> implements IWProjectInfoQuery,BaseQuery<WProjectInfoDO> {
 
     @Override
     public Collection<WProjectInfoDTO> queryAll() {
