@@ -1,11 +1,7 @@
 package com.flowyun.study.pm_blake.moments.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.TableLogic;
-import com.flowyun.mp.entity.BaseEntity;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.experimental.Accessors;
+import com.flowyun.boot.entity.BaseId;
 
 /**
  * <p>
@@ -17,10 +13,8 @@ import lombok.experimental.Accessors;
  */
 
 @Data
-@EqualsAndHashCode(callSuper = true)
-@TableName("w_project_moments")
 
-public class WProjectMomentsDTO extends BaseEntity {
+public class WProjectMomentsDTO extends BaseId {
 
     private static final long serialVersionUID=1L;
 
@@ -57,7 +51,6 @@ public class WProjectMomentsDTO extends BaseEntity {
     /**
      * 记录状态
      */
-    @TableLogic
     private Integer status;
 
 
